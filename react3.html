@@ -3,6 +3,18 @@
     <head>
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-        <script src="http://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="http://unpkg.com/@babel/standalone/babel.min.js"></script>                             <!--JSX-->
     </head>
+    <body>
+        <div id='jsx'></div>
+
+        <script type='text/babel'>
+            class Greeting extends React.Component {        //In jsx, all classes need to be capitalized
+                render() {                                  //used to create a class
+                    return <h1>Hello, World!</h1>
+                }
+            }
+        ReactDOM.render(<Greeting />, document.getElementById('jsx'))   //calls for class
+        </script>
+    </body>
 </html>
