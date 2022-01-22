@@ -2,11 +2,15 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
+        
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </head>
     <body>
+        <div id='likeButtonContainer'></div>
         <script>
+            'use strict';
+
             const x = React.createElement;
 
             class likeButton extends React.Component {
@@ -32,6 +36,5 @@
             const domContainer = document.querySelector('#likeButtonContainer');
             ReactDOM.render(x(likeButton), domContainer);
         </script>
-        <div id='likeButtonContainer'></div>
     </body>
 </html>
